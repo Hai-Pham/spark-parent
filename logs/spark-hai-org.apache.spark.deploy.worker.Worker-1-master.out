@@ -1,0 +1,20 @@
+Spark Command: java -cp ::/home/hai/git/spark/sbin/../conf:/home/hai/git/spark/assembly/target/scala-2.10/spark-assembly-1.2.1-SNAPSHOT-hadoop1.0.4.jar -XX:MaxPermSize=128m -Dspark.akka.logLifecycleEvents=true -Xms512m -Xmx512m org.apache.spark.deploy.worker.Worker spark://master:7077
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/01/21 18:03:03 INFO Worker: Registered signal handlers for [TERM, HUP, INT]
+15/01/21 18:03:03 INFO SecurityManager: Changing view acls to: hai
+15/01/21 18:03:03 INFO SecurityManager: Changing modify acls to: hai
+15/01/21 18:03:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(hai); users with modify permissions: Set(hai)
+15/01/21 18:03:04 INFO Slf4jLogger: Slf4jLogger started
+15/01/21 18:03:04 INFO Remoting: Starting remoting
+15/01/21 18:03:04 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkWorker@master:49309]
+15/01/21 18:03:04 INFO Remoting: Remoting now listens on addresses: [akka.tcp://sparkWorker@master:49309]
+15/01/21 18:03:04 INFO Utils: Successfully started service 'sparkWorker' on port 49309.
+15/01/21 18:03:04 INFO Worker: Starting Spark worker master:49309 with 2 cores, 2.6 GB RAM
+15/01/21 18:03:04 INFO Worker: Spark home: /home/hai/git/spark
+15/01/21 18:03:05 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+15/01/21 18:03:05 INFO WorkerWebUI: Started WorkerWebUI at http://master:8081
+15/01/21 18:03:05 INFO Worker: Connecting to master spark://master:7077...
+15/01/21 18:03:05 INFO Worker: Successfully registered with master spark://master:7077
+15/01/21 18:03:57 ERROR Worker: RECEIVED SIGNAL 15: SIGTERM

@@ -1,0 +1,19 @@
+Spark Command: java -cp ::/home/hai/git/spark/sbin/../conf:/home/hai/git/spark/assembly/target/scala-2.10/spark-assembly-1.2.1-SNAPSHOT-hadoop1.0.4.jar -XX:MaxPermSize=128m -Dspark.akka.logLifecycleEvents=true -Xms512m -Xmx512m org.apache.spark.deploy.master.Master --ip master --port 7077 --webui-port 8080
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/01/21 18:02:55 INFO Master: Registered signal handlers for [TERM, HUP, INT]
+15/01/21 18:02:55 INFO SecurityManager: Changing view acls to: hai
+15/01/21 18:02:55 INFO SecurityManager: Changing modify acls to: hai
+15/01/21 18:02:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(hai); users with modify permissions: Set(hai)
+15/01/21 18:02:56 INFO Slf4jLogger: Slf4jLogger started
+15/01/21 18:02:56 INFO Remoting: Starting remoting
+15/01/21 18:02:57 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkMaster@master:7077]
+15/01/21 18:02:57 INFO Remoting: Remoting now listens on addresses: [akka.tcp://sparkMaster@master:7077]
+15/01/21 18:02:57 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+15/01/21 18:02:57 INFO Master: Starting Spark master at spark://master:7077
+15/01/21 18:02:57 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+15/01/21 18:02:57 INFO MasterWebUI: Started MasterWebUI at http://master:8080
+15/01/21 18:02:58 INFO Master: I have been elected leader! New state: ALIVE
+15/01/21 18:03:05 INFO Master: Registering worker master:49309 with 2 cores, 2.6 GB RAM
+15/01/21 18:03:57 ERROR Master: RECEIVED SIGNAL 15: SIGTERM
